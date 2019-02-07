@@ -1,0 +1,39 @@
+// BREAKPOINTS
+$small: 480px;
+$medium: 768px;
+$large: 1024px;
+$x-large: 1280px;
+
+$mobile: 0;
+$tablet: $small;
+$tablet-landscape: $medium;
+$desktop: $large;
+$large-desktop: $x-large;
+
+// COLORS
+$black: #222;
+$white: #fff;
+
+// FONT SIZES
+$font-sizes: (
+  $mobile: (
+    s: 8px,
+    m: 11px,
+    l: 18px,
+  ),
+  $tablet-landscape: (
+    s: 16px,
+    m: 21px,
+    l: 36px,
+  ),
+);
+
+// FONT WEIGHTS
+$light: 100;
+$regular: 400;
+$bold: 700;
+
+// Z-INDICES
+$bottom: 1;
+$middle: 5;
+$top: 10;

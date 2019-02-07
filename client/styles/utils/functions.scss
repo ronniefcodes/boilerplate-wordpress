@@ -1,0 +1,13 @@
+@function get-font-size($sz: '', $bp: $mobile) {
+  @each $breakpoint, $sizes in $font-sizes {
+    @if $breakpoint == $bp and map-has-key($sizes, $sz) {
+      @each $size, $value in map-get($font-sizes, $breakpoint) {
+        @if $size == $sz {
+          @return $value;
+        }
+      }
+    }
+  }
+
+  @return initial;
+}
