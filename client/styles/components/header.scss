@@ -1,3 +1,26 @@
 header {
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: $black;
+  color: $white;
+
+  /* account for admin bar if present */
+  .admin-bar & {
+    top: get-admin-bar-height();
+
+    /* hardcoded as wordpress' base admin styling uses odd breakpoints */
+    @include min-screen(783px) {
+      top: get-admin-bar-height($tablet-landscape);
+    }
+  }
+}
+
+.header__container {
+  @include content-container;
+  padding: 20px 0;
+}
+
+.header__title {
 }

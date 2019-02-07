@@ -1,0 +1,13 @@
+main {
+  min-height: 75vh;
+  padding-top: get-header-height();
+  background: $white;
+
+  @include min-screen($tablet-landscape) {
+    padding-top: get-header-height($tablet-landscape);
+  }
+
+  section {
+    @include content-container;
+  }
+}

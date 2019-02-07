@@ -1,3 +1,22 @@
 footer {
-  
+  background: $black;
+  color: $white;
+}
+
+.footer__container {
+  @include content-container;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.footer__image {
+  width: 30%;
+  height: auto;
+
+  @include min-screen($tablet-landscape) {
+    max-width: 100px;
+  }
 }

@@ -11,3 +11,33 @@
 
   @return initial;
 }
+
+@function get-admin-bar-height(
+  $breakpoint: $mobile
+) {
+  $height: 0;
+
+  @each $name, $value in $admin-bar-height {
+    @if $name == $breakpoint {
+      $height: $height + $value;
+    }
+  }
+
+  @return $height;
+}
+
+@function get-header-height(
+  $breakpoint: $mobile
+) {
+  $header-array: $header-height;
+
+  $height: 0;
+
+  @each $name, $value in $header-array {
+    @if $name == $breakpoint {
+      $height: $height + $value;
+    }
+  }
+
+  @return $height;
+}

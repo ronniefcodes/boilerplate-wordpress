@@ -7,6 +7,12 @@
   }
 }
 
+@mixin content-container {
+  width: 95%;
+  max-width: $x-large;
+  margin: 0 auto;
+}
+
 @mixin max-screen($res) {
   @media screen and (max-width: $res){
     @content;

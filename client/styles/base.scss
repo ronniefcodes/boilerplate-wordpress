@@ -1,0 +1,35 @@
+body {
+  background: $black;
+}
+
+h1 {
+  font-size: get-font-size('l');
+  line-height: 1.2;
+  margin: 0;
+
+  @include min-screen($tablet-landscape) {
+    font-size: get-font-size('l', $tablet-landscape);
+  }
+}
+
+h2 {
+  font-size: get-font-size('m');
+  line-height: 1.2;
+
+  @include min-screen($tablet-landscape) {
+    font-size: get-font-size('m', $tablet-landscape);
+  }
+}
+
+p {
+  font-size: get-font-size('s');
+  line-height: 1.2;
+
+  @include min-screen($tablet-landscape) {
+    font-size: get-font-size('s', $tablet-landscape);
+  }
+}
+
+a {
+  color: inherit;
+}

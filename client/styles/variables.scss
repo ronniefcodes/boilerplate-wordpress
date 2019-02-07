@@ -33,6 +33,16 @@ $light: 100;
 $regular: 400;
 $bold: 700;
 
+// ELEMENT HEIGHTS
+$admin-bar-height: (
+  $mobile: 46px,
+  $tablet-landscape: 32px,
+);
+$header-height: (
+  $mobile: 61px,
+  $tablet-landscape: 83px,
+);
+
 // Z-INDICES
 $bottom: 1;
 $middle: 5;
