@@ -12,6 +12,7 @@ module.exports = (env = 'production', argv) => {
   return {
     entry: {
       app: './client/scripts/app.js',
+      page: './client/scripts/page.js',
     },
     output: {
       filename: `[name].js`,

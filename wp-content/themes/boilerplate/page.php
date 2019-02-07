@@ -1,3 +1,11 @@
+<?php
+  function enqueue_page_scripts() {
+    wp_enqueue_script( 'page_scripts', get_template_directory_uri() . '/scripts/page.js', array( 'enqueue_app_scripts' ), false, true );
+  }
+
+  add_action( 'wp_enqueue_scripts', 'enqueue_page_scripts', 100 );
+?>
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
   <?php get_template_part( 'partials/head' ); ?>
