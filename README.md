@@ -13,5 +13,5 @@ Includes:
 1. Install WordPress normally
 2. Clone repository onto base WordPress directory (wherever `wp-config.php` is located)
 3. Run `npm install`
-4. Run `npm run build` or `npm run watch`
+4. Run `npm run build` or `npm run watch` to generate JS, CSS and media files
 5. Access WordPress instance normally and switch to Boilerplate theme
